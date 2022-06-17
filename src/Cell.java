@@ -4,7 +4,7 @@ import java.util.Set;
 public class Cell {
 
     private int value = 0;
-    private Set<Integer> ineligibles = new HashSet<>();
+    private final Set<Integer> ineligibles = new HashSet<>();
 
     public Cell() {}
 

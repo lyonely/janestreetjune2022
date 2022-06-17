@@ -31,4 +31,15 @@ public class Board {
     public Cell getCell(int y, int x) {
         return board[x - 1][y - 1];
     }
+
+    public boolean isComplete() {
+        for (int x = 0; x < width; x++) {
+            for (int y = 0; y < height; y++) {
+                if (board[x][y].getValue() == 0) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
 }

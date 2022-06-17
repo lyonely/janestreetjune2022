@@ -46,5 +46,9 @@ public class Main {
         }
 
         gameBoard.printBoard();
+
+        while (!gameBoard.isComplete()) {
+            
+        }
     }
 }
